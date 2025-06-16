@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="historico.css">
+    <script src="historico.js"></script>
+    <title>MedCare - Histórico</title>
+    </head>
+<body>
+    <div class="header">
+        <div class="logo">Med<span>Care</span></div>
+        <nav class="nav">
+            <a href="agendamentos.html" class="nav-item">Agendar Consulta</a>
+            <a href="meus_agendamentos.html" class="nav-item">Meus Agendamentos</a>
+            <a href="historico.html" class="nav-item active">Histórico</a>
+            <a href="perfil.html" class="nav-item">Perfil</a>
+        </nav>
+        <div class="user-info">
+            <span>João Silva</span>
+            <div class="user-avatar">JS</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-title">Meu Histórico</div>
+            <a href="#" class="sidebar-item active">Histórico Completo</a>
+            <a href="#" class="sidebar-item">Consultas Realizadas</a>
+            <a href="#" class="sidebar-item">Exames Realizados</a>
+            <a href="#" class="sidebar-item">Receitas Médicas</a>
+            <a href="#" class="sidebar-item">Relatórios</a>
+        </aside>
+
+        <main class="main-content">
+            <div class="page-header">
+                <h1 class="page-title">Histórico de Consultas e Exames</h1>
+                <p class="page-subtitle">Visualize seu histórico médico completo</p>
+            </div>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <label class="filter-label">Período</label>
+                    <select class="filter-select">
+                        <option>Últimos 6 meses</option>
+                        <option>Último ano</option>
+                        <option>Últimos 2 anos</option>
+                        <option>Todo o período</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Tipo</label>
+                    <select class="filter-select">
+                        <option>Todos</option>
+                        <option>Consultas</option>
+                        <option>Exames</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Especialidade</label>
+                    <select class="filter-select">
+                        <option>Todas</option>
+                        <option>Cardiologia</option>
+                        <option>Dermatologia</option>
+                        <option>Oftalmologia</option>
+                        <option>Clínico Geral</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Status</label>
+                    <select class="filter-select">
+                        <option>Todos</option>
+                        <option>Realizadas</option>
+                        <option>Canceladas</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <div class="section-header">
+                    <div class="section-icon consultas-icon">🩺</div>
+                    <h2 class="section-title">Consultas Realizadas</h2>
+                </div>
+
+                <div class="item-card consulta-card">
+                    <div class="item-header">
+                        <div>
+                            <h3 class="item-title">Consulta - Cardiologia</h3>
+                        </div>
+                        <span class="item-status status-realizada">Realizada</span>
+                    </div>
+                    <div class="item-details">
+                        <div class="detail-group">
+                            <span class="detail-label">Data</span>
+                            <span class="detail-value">15/04/2025</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Horário</span>
+                            <span class="detail-value">14:30</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Médico</span>
+                            <span class="detail-value">Dr. Cardoso</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Local</span>
+                            <span class="detail-value">Unidade Centro</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Plano</span>
+                            <span class="detail-value">Saúde Total</span>
+                        </div>
+                    </div>
+                    <div class="item-actions">
+                        <button class="btn btn-primary">Ver Receita</button>
+                        <button class="btn btn-secondary">Baixar Relatório</button>
+                        <button class="btn btn-secondary">Reagendar</button>
+                    </div>
+                </div>
+
+                <div class="item-card consulta-card">
+                    <div class="item-header">
+                        <div>
+                            <h3 class="item-title">Consulta - Dermatologia</h3>
+                        </div>
+                        <span class="item-status status-cancelada">Cancelada</span>
+                    </div>
+                    <div class="item-details">
+                        <div class="detail-group">
+                            <span class="detail-label">Data</span>
+                            <span class="detail-value">22/04/2025</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Horário</span>
+                            <span class="detail-value">10:15</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Médico</span>
+                            <span class="detail-value">Dra. Pele</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Local</span>
+                            <span class="detail-value">Unidade Norte</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Motivo</span>
+                            <span class="detail-value">Cancelado pelo paciente</span>
+                        </div>
+                    </div>
+                    <div class="item-actions">
+                        <button class="btn btn-primary">Reagendar</button>
+                    </div>
+                </div>
+
+                <div class="item-card consulta-card">
+                    <div class="item-header">
+                        <div>
+                            <h3 class="item-title">Consulta - Oftalmologia</h3>
+                        </div>
+                        <span class="item-status status-realizada">Realizada</span>
+                    </div>
+                    <div class="item-details">
+                        <div class="detail-group">
+                            <span class="detail-label">Data</span>
+                            <span class="detail-value">28/04/2025</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Horário</span>
+                            <span class="detail-value">09:00</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Médico</span>
+                            <span class="detail-value">Dr. Visão</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Local</span>
+                            <span class="detail-value">Unidade Sul</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Plano</span>
+                            <span class="detail-value">Unimed</span>
+                        </div>
+                    </div>
+                    <div class="item-actions">
+                        <button class="btn btn-primary">Ver Receita</button>
+                        <button class="btn btn-secondary">Baixar Relatório</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <div class="section-header">
+                    <div class="section-icon exames-icon">🔬</div>
+                    <h2 class="section-title">Exames Realizados</h2>
+                </div>
+
+                <div class="item-card exame-card">
+                    <div class="item-header">
+                        <div>
+                            <h3 class="item-title">Hemograma Completo</h3>
+                        </div>
+                        <span class="item-status status-realizada">Realizada</span>
+                    </div>
+                    <div class="item-details">
+                        <div class="detail-group">
+                            <span class="detail-label">Data</span>
+                            <span class="detail-value">10/04/2025</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Horário</span>
+                            <span class="detail-value">08:00</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Laboratório</span>
+                            <span class="detail-value">Lab Central</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Médico Solicitante</span>
+                            <span class="detail-value">Dr. Cardoso</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Resultado</span>
+                            <span class="detail-value">Disponível</span>
+                        </div>
+                    </div>
+                    <div class="item-actions">
+                        <button class="btn btn-primary">Ver Resultado</button>
+                        <button class="btn btn-secondary">Baixar PDF</button>
+                        <button class="btn btn-secondary">Enviar por Email</button>
+                    </div>
+                </div>
+
+                <div class="item-card exame-card">
+                    <div class="item-header">
+                        <div>
+                            <h3 class="item-title">Eletrocardiograma (ECG)</h3>
+                        </div>
+                        <span class="item-status status-realizada">Realizada</span>
+                    </div>
+                    <div class="item-details">
+                        <div class="detail-group">
+                            <span class="detail-label">Data</span>
+                            <span class="detail-value">15/04/2025</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Horário</span>
+                            <span class="detail-value">15:30</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Local</span>
+                            <span class="detail-value">Unidade Centro</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Médico Solicitante</span>
+                            <span class="detail-value">Dr. Cardoso</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Resultado</span>
+                            <span class="detail-value">Normal</span>
+                        </div>
+                    </div>
+                    <div class="item-actions">
+                        <button class="btn btn-primary">Ver Resultado</button>
+                        <button class="btn btn-secondary">Baixar PDF</button>
+                    </div>
+                </div>
+
+                <div class="item-card exame-card">
+                    <div class="item-header">
+                        <div>
+                            <h3 class="item-title">Exame de Vista Completo</h3>
+                        </div>
+                        <span class="item-status status-pendente">Aguardando</span>
+                    </div>
+                    <div class="item-details">
+                        <div class="detail-group">
+                            <span class="detail-label">Data</span>
+                            <span class="detail-value">28/04/2025</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Horário</span>
+                            <span class="detail-value">10:00</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Local</span>
+                            <span class="detail-value">Unidade Sul</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Médico Solicitante</span>
+                            <span class="detail-value">Dr. Visão</span>
+                        </div>
+                        <div class="detail-group">
+                            <span class="detail-label">Status</span>
+                            <span class="detail-value">Resultado em processamento</span>
+                        </div>
+                    </div>
+                    <div class="item-actions">
+                        <button class="btn btn-secondary">Acompanhar Status</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

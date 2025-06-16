@@ -1,0 +1,59 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <title>MedCare - Sistema de Acesso</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="header">
+            <h1 class="logo">Med<span>Care</span></h1>
+            <p class="subtitle">Sistema de Gestão Médica</p>
+        </div>
+
+        <div class="error-message" id="errorMessage">
+            Credenciais inválidas. Verifique seus dados e tente novamente.
+        </div>
+
+        <div class="success-message" id="successMessage">
+            Login realizado com sucesso. Redirecionando...
+        </div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">E-mail corporativo</label>
+                <input type="email" id="email" placeholder="usuario@clinica.com.br" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <div class="password-toggle">
+                    <input type="password" id="password" placeholder="Digite sua senha" required autocomplete="current-password">
+                    <button type="button" class="toggle-btn" onclick="togglePassword()">👁️</button>
+                </div>
+            </div>
+
+            <div class="form-options">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Manter-me conectado</label>
+                </div>
+                <a href="#" class="forgot-link" onclick="handleForgotPassword(event)">Esqueci minha senha</a>
+            </div>
+
+            <button type="submit" class="login-button" id="loginBtn">
+                <span>Acessar Sistema</span>
+            </button>
+        </form>
+
+        <div class="footer">
+            Problemas de acesso? <a href="#" onclick="handleSupport(event)">Contate o suporte técnico</a>
+        </div>
+    </div>
+
+    <div class="version-info">
+        MedCare v2.1.4 | © 2025
+    </div>   
+    </body>
